@@ -1,5 +1,5 @@
 {% set python_min = "3.12" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: kissbt
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/k/kissbt/kissbt-{{ version }}.tar.gz
-  sha256: 24f3b6d8c50b6d8df31f341f2724418deb0decc756040e341987bb9b79df2801
+  sha256: d8d0e3705f0a63b5a193846e7b57ff08989ab30477ca5bb89b1fc33fdaa082c7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
